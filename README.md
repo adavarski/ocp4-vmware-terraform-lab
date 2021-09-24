@@ -153,8 +153,6 @@ Last login: Fri Sep 24 08:44:01 2021 from 192.168.1.100
 Last login: Fri Sep 24 08:44:12 UTC 2021 on pts/0
 [root@ocp47-master1 ~]# crictl images
 [root@ocp47-master1 ~]# crictl ps -a|grep -i running
-
-
 ```
 #### 13.Clean Lab
 ```
