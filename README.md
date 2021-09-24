@@ -159,6 +159,5 @@ Last login: Fri Sep 24 08:44:12 UTC 2021 on pts/0
 #### 13.Clean Lab
 ```
 $ make nukelab
-$ govc folder.destroy /datacenter1/vm/ocp47
 $ govc pool.destroy "/datacenter1/host/192.168.1.99/Resources/ocp47"
 ```
