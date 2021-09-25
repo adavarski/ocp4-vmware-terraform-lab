@@ -119,7 +119,7 @@ Edit install-config.yaml and add pullSecret and sshKey (public)
 
 #### 9.Check and approve pending CSRs with `make get-csr` and `make approve-csr`
 
-#### 10.Run make bootstrap-complete to destroy the bootstrap VM
+#### 10.Run `make bootstrap-complete` to destroy the bootstrap VM
 
 #### 11.Run `make wait-for-install` and wait for the cluster install to complete
 
