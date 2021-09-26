@@ -99,7 +99,7 @@ The OVA is the VM template that will be cloned by Terraform when creating the cl
 
 [govc](https://github.com/vmware/govmomi/tree/master/govc) is a vSphere CLI tool. Here's how to use to import OVAs directly from Red Hat to your VMware environment as a one-liner, make sure to adjust the version number, folder, datastore, name and url as required.
 
-    govc import.ova --folder=templates --ds=datastore1 --name=rhcos-4.7.7 https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.7/rhcos-vmware.x86_64.ova
+    $ govc import.ova --folder=templates --ds=datastore1 --name=rhcos-4.7.7 https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.7/4.7.7/rhcos-vmware.x86_64.ova
 
 ### Import OVA manually to vSphere example
 
