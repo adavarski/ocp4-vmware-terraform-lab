@@ -148,7 +148,7 @@ INFO Ignition-Configs created in: . and auth
 The output should be similar to:
 
 ```
-alex@mooncake ocp4 % tree openshift 
+$ tree openshift 
 openshift
 ├── auth
 │   ├── kubeadmin-password
@@ -170,13 +170,13 @@ As each node comes up, you can verify successful boot by viewing the VM console 
 The first is a wrapper around `openshift-install wait-for install-complete` and it is:
 
 ```
-make wait-for-install
+$ make wait-for-install
 ```
 
 The second is useful because it allows you to monitor the progress of the cluster operators as the installation progresses and automatically approves CSRs for you as they come in too. That is:
 
 ```
-make lazy-install
+$ make lazy-install
 ```
 
 ## Installation Complete
@@ -184,7 +184,7 @@ make lazy-install
 Once the installation is complete, you can safely remove the bootstrap node with the following command:
 
 ```
-cd clusters/lab; terraform apply -auto-approve -var 'bootstrap_complete=true'
+$ cd clusters/lab; terraform apply -auto-approve -var 'bootstrap_complete=true'
 ```
 
 ## Configuring a MachineSet
